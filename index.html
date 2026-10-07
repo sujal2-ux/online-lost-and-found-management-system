@@ -9,38 +9,87 @@
 
 <body>
 
-    <header>
-        <h1>Online Lost & Found</h1>
-        <p>Management System</p>
-    </header>
+<header>
+    <h1>Online Lost & Found Management System</h1>
 
-    <section class="hero">
-        <h2>Find What You've Lost</h2>
-        <p>Report lost items and help others find their belongings.</p>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Lost Items</a>
+        <a href="#">Found Items</a>
+        <a href="#">Report Item</a>
+    </nav>
+</header>
 
-        <button>Report Lost Item</button>
-        <button>Report Found Item</button>
-    </section>
+<section class="hero">
+    <h2>Find Lost Items Faster</h2>
 
-    <section class="items">
-        <h2>Recent Items</h2>
+    <p>Report, search and manage lost and found belongings.</p>
+
+    <input type="text" placeholder="Search for an item...">
+
+    <select>
+        <option>All Categories</option>
+        <option>Electronics</option>
+        <option>Documents</option>
+        <option>Accessories</option>
+    </select>
+
+    <button>Search</button>
+</section>
+
+<section class="dashboard">
+
+    <div class="stat">
+        <h2>25</h2>
+        <p>Lost Items</p>
+    </div>
+
+    <div class="stat">
+        <h2>18</h2>
+        <p>Found Items</p>
+    </div>
+
+    <div class="stat">
+        <h2>12</h2>
+        <p>Items Returned</p>
+    </div>
+
+</section>
+
+<section class="items">
+
+    <h2>Recent Lost & Found Items</h2>
+
+    <div class="item-container">
 
         <div class="item">
             <h3>Black Wallet</h3>
             <p>Location: College Campus</p>
-            <p>Status: Lost</p>
+            <p>Category: Accessories</p>
+            <span class="lost">LOST</span>
         </div>
 
         <div class="item">
             <h3>Blue Water Bottle</h3>
             <p>Location: Library</p>
-            <p>Status: Found</p>
+            <p>Category: Personal Items</p>
+            <span class="found">FOUND</span>
         </div>
-    </section>
 
-    <footer>
-        <p>© 2026 Online Lost & Found Management System</p>
-    </footer>
+        <div class="item">
+            <h3>College ID Card</h3>
+            <p>Location: Computer Department</p>
+            <p>Category: Documents</p>
+            <span class="lost">LOST</span>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Online Lost & Found Management System</p>
+</footer>
 
 </body>
 </html>
